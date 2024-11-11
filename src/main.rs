@@ -22,8 +22,8 @@ fn main() {
     println!("What is your lastname?");
     user.lastname = get_user_info::get_lastname();
     
-    println!("What is your age?");
-    user.age = get_user_info::get_edad();
+    println!("How old are you?");
+    user.age = get_user_info::get_age();
 
     println!("What are your favorite games? (3)");
     user.games = get_user_info::get_games();

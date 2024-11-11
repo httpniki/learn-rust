@@ -25,7 +25,7 @@ pub fn get_lastname() -> String {
     return lastname
 }
 
-pub fn get_edad() -> u32 {
+pub fn get_age() -> u32 {
     let mut input = String::new();
     
     io::stdin()
@@ -76,7 +76,7 @@ pub fn get_games() -> [String; 3] {
     }
 
     if games.iter().any(|x| x.len() == 0) {
-        panic!("Three games are required, but {} games were obtained", games.len());
+        panic!("Three games are required, but {} games are provided", games.len());
     }
 
     return games
